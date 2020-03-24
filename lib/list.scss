@@ -5,3 +5,23 @@ ul, ol {
     padding-top: 6px;
   }
 }
+
+ul, ol {
+  &.styled {
+    margin: 0;
+
+    li {
+      background: white;
+      min-width: 200px;
+      padding: 8px 12px 8px 24px;
+      margin: 16px 0;
+      box-shadow: 0 4px 12px #eaeaea;
+    }
+  }
+}
+
+ul {
+  &.styled {
+    list-style-type: none;
+  }
+}
