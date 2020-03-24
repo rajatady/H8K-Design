@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "name": "h8k-design",
+  "regions": ["bom1"],
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@now/static-build",
+      "config": { "distDir": "docs" }
+    }
+  ]
+}

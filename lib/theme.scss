@@ -1,0 +1,42 @@
+/* You can add global styles to this file, and also import other style files */
+
+//html, body { height: 100%; }
+//body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; background-color: #fafafa;}
+
+@function hexToRGB($hex) {
+  @return red($hex), green($hex), blue($hex);
+}
+// Primary Colors
+//
+// The primary colors for branding.
+//
+// brand-color      - #1ba94c; --brand-color
+// success-color    - #22a97a; --success-color
+// disabled-color   - #6EA989; --disabled-color
+// error-color      - #a93c32; --error-color
+// brand-color-dark - #007827; --brand-color-dark
+// heading-color    - #3a424e; --heading-color
+//
+// Styleguide Base.Colors
+:root {
+  --brand-color: #1ba94c;
+  --brand-color-rgb: #{hexToRGB(#1ba94c)};
+  --success-color: #22a97a;
+  --disabled-color: #6EA989;
+  --error-color: #a93c32;
+  --brand-color-dark: #007827;
+  --brand-box-shadow: 0 4px 12px rgba(27, 169, 76, 0.5);
+  --error-box-shadow: 0 4px 12px rgba(169, 60, 50, 0.51);
+  --font-family-sans-serif: 'Open Sans', sans-serif;
+  --heading-color : #3a424e;
+}
+
+body {
+  font-family: var(--font-family-sans-serif) !important;
+}
+
+
+
+
+
+

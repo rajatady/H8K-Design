@@ -1,0 +1,82 @@
+@import "mixins";
+
+@mixin button($primary_color, $text_color, $box_shadow_color) {
+  color: $text_color;
+  outline: none;
+  background: $primary_color;
+  box-shadow: $box_shadow_color;
+  padding: 0 1.528em;
+  min-height: 2.778em;
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  margin: 8px 12px;
+  transition: box-shadow 0.2s ease-in-out;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: 700;
+  font-family: var(--font-family-sans-serif);
+  @include rounded(2px);
+
+  &:hover {
+  }
+
+  &:active {
+    position: relative;
+    top: 1px;
+  }
+
+  &.outline {
+    background: white;
+    color: $primary_color;
+    border: 1px solid $primary_color;
+    box-shadow: none;
+  }
+
+  &.text {
+    background: transparent;
+    color: $primary_color;
+    border: none;
+    box-shadow: none;
+    margin: 8px 0;
+  }
+
+  &.disabled {
+    background: var(--disabled-color);
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    border: none;
+  }
+}
+
+
+
+button {
+  @include button(var(--brand-color), #fff, var(--brand-box-shadow));
+
+  &.danger {
+    @include button(var(--error-color), #fff, var(--error-box-shadow));
+  }
+
+  &.secondary {
+    @include button(#c3c3c3, #fff, var(--error-box-shadow));
+  }
+}
+
+// Buttons
+//
+// Buttons can be default, outline, text
+//
+// Markup:
+//  <button >Button</button>
+//  <button class="outline">Button</button>
+//  <button class="text">Button</button>
+//  <button class="danger">Button</button>
+//  <button class="danger text">Button</button>
+//  <button class="danger outline">Button</button>
+//
+// Styleguide Components.Buttons
+//

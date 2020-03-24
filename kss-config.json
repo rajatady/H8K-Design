@@ -1,0 +1,10 @@
+{
+  "title": "H8K Design Guide",
+  "source": "lib/",
+  "destination": "docs/",
+  "builder": "node_modules/michelangelo/kss_styleguide/custom-template/",
+  "css": [
+    "css/styles.css"
+  ],
+  "js": []
+}
