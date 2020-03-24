@@ -1,5 +1,5 @@
 {
-  "title": "H8K Design Guide",
+  "title": "H8K Design System",
   "source": "lib/",
   "destination": "docs/",
   "builder": "node_modules/michelangelo/kss_styleguide/custom-template/",

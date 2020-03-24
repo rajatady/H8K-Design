@@ -1,9 +1,9 @@
 {
   "name": "h8k-design",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A CSS based design library",
   "homepage": "https://h8k-design.now.sh/",
-  "repository": "",
+  "repository": "https://github.com/rajatady/H8K-Design",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

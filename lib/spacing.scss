@@ -1,7 +1,23 @@
 $spaceamounts: (0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 15, 20, 25, 30, 35, 40, 45, 50, 75, 100); // Adjust this to include the pixel amounts you need.
 $sides: (top, bottom, left, right);
 
-
+// Spacing
+//
+// Classes to apply spacing (Margin and Padding)
+// Format - m{direction}-{value} | p{direction}-{value}
+//
+// Markup:
+//Valid values for direction:
+// -> top : t
+// -> bottom : b
+// -> left : l
+// -> right : r
+//
+//Valid values for space amounts:
+// -> 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 15, 20, 25, 30, 35, 40, 45, 50, 75, 100
+//
+// Styleguide Spacing
+//
 @each $space in $spaceamounts {
   @each $side in $sides {
     .m#{str-slice($side, 0, 1)}-#{$space} {
@@ -13,3 +29,26 @@ $sides: (top, bottom, left, right);
     }
   }
 }
+
+// Margins
+//
+// Use margin classes using m{direction}-{value}
+//
+// Markup:
+//  <div class="mt-1">Margin 1px</div>
+// Markup:
+//  <div class="mt-30">Margin 30px</div>
+//
+// Styleguide Spacing.Margin
+
+// Padding
+//
+// Use padding classes using p{direction}-{value}
+//
+// Markup:
+//  <div class="pt-1">Padding 1px</div>
+// Markup:
+//  <div class="pt-30">Padding 30px</div>
+//
+// Styleguide Spacing.Padding
+//
