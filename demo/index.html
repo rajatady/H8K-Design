@@ -5,7 +5,7 @@
     <title>H8K Demo</title>
     <link rel="stylesheet" type="text/css" href="../dist/index.css">
 </head>
-<body>
+<body class="pb-75">
 <nav class="app-header fixed">
     <div class="layout-row justify-content-between">
         <section class="logo">H8K Demo</section>
@@ -14,7 +14,7 @@
         </section>
     </div>
 </nav>
-<h3 class="text-center">Animations</h3>
+<h3 class="text-center mt-75">Animations</h3>
 <div class="layout-row align-items-center justify-content-center">
     <div class="card w-50 mx-auto slide-up-fade-in">
         <div class="card-text">
@@ -38,29 +38,57 @@
 </div>
 
 <h3 class="text-center">Buttons</h3>
-<section class="layout-row justify-content-center">
+<section class="layout-row justify-content-center ">
 
     <div class="layout-column justify-content-center align-items-center">
         <button>Button</button>
-        <button class="outline">Button</button>
+        <button class="outlined">Button</button>
         <button class="text">Button</button>
         <button class="disabled">Button</button>
+        <button class="large">Button</button>
+        <button class="outline small">Button</button>
+        <button class="x-small disabled">Button</button>
     </div>
 
     <div class="layout-column justify-content-center align-items-center">
         <button class="secondary">Button</button>
-        <button class="secondary outline">Button</button>
+        <button class="secondary outlined">Button</button>
         <button class="secondary text">Button</button>
-        <button class="disabled">Button</button>
+        <button class="secondary disabled">Button</button>
+        <button class="secondary large">Button</button>
+        <button class="secondary outline small">Button</button>
+        <button class="secondary x-small disabled">Button</button>
     </div>
 
     <div class="layout-column justify-content-center align-items-center">
         <button class="danger">Button</button>
-        <button class="danger outline">Button</button>
+        <button class="danger outlined">Button</button>
         <button class="danger text">Button</button>
         <button class="danger disabled">Button</button>
+        <button class="danger large">Button</button>
+        <button class="danger outline small">Button</button>
+        <button class="danger x-small disabled">Button</button>
     </div>
 </section>
+
+<h3 class="text-center">Input with UL</h3>
+<div class="layout-column justify-content-center align-items-center">
+    <div class="layout-column justify-content-center align-items-center">
+        <section class="layout-row align-items-center justify-content-center">
+            <input type="text" class="white large outlined" placeholder="Name"/>
+            <button type="submit" class="secondary flat" id="submit-button">Add Customer</button>
+        </section>
+
+        <p class="font-weight-bold">Features Include:</p>
+        <ul>
+            <li>Faster Page Loads</li>
+            <li>Embedded Styles</li>
+            <li>Less Bloat</li>
+            <li>Consistent Interface</li>
+        </ul>
+    </div>
+
+</div>
 
 </body>
 </html>

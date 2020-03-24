@@ -22,7 +22,8 @@
 //
 // The primary colors for branding.
 //
-// brand-color      - #1ba94c; --brand-color
+// primary-color    - #1ba94c; --primary-color
+// secondary-color  - #097bbf; --secondary-color
 // success-color    - #22a97a; --success-color
 // disabled-color   - #6EA989; --disabled-color
 // error-color      - #a93c32; --error-color
@@ -34,8 +35,9 @@
 // Styleguide Base.Colors
 :root {
   @include color(brand, #1ba94c);
-  @include color(error, #a93c32);
+  @include color(primary, #1ba94c);
   @include color(secondary, #097bbf);
+  @include color(error, #a93c32);
   --success-color: #22a97a;
   --disabled-color: #6EA989;
   --font-family-sans-serif: 'Open Sans', sans-serif;
