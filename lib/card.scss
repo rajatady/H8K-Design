@@ -23,6 +23,13 @@
   .card-text {
     padding: 1em;
   }
+
+  .card-actions {
+    padding: 1em 0.8em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
 }
 
 // Card Text

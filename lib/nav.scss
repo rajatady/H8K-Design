@@ -9,10 +9,22 @@ nav {
     width: 100%;
     box-sizing: border-box;
     box-shadow: 0 3px 10px 0 rgba(115, 143, 147, 0.3);
-    position: fixed;
-  }
+    padding: 0 1em;
 
-  .logo {
-    height: 44px;
+    &.fixed {
+      position: fixed;
+      top: 0;
+    }
+
+    a {
+      color: white;
+      font-size: 0.9em;
+    }
+
+    .logo {
+      height: 44px;
+      color: var(--brand-color);
+      font-size: 1.2em;
+    }
   }
 }
