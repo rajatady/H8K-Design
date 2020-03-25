@@ -13,9 +13,9 @@
   --#{$name}-rgb: #{hexToRGB($color)};
   --#{$name}-hover: #{lighten($color, 10)};
   --#{$name}-dark: #{darken($color, 10)};
-  --#{$name}-disabled: #{lighten($color, 20)};
-  --#{$name}-box-shadow: 0 4px 12px #{lighten($color, 15)};
-  --#{$name}-box-shadow-hover: 0 4px 12px #{lighten($color, 25)};
+  --#{$name}-disabled: #{lighten($color, 50)};
+  --#{$name}-box-shadow: #{rgba($color, 0.5)};
+  --#{$name}-box-shadow-hover: #{rgba($color, 0.4)};
 }
 
 // Primary Colors

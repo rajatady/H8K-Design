@@ -10,13 +10,27 @@
     <div class="layout-row justify-content-between">
         <section class="logo">H8K Demo</section>
         <section>
-            <a class="">Docs</a>
+            <a href="https://h8k-design.now.sh/" target="_blank">Docs</a>
         </section>
     </div>
 </nav>
-<h3 class="text-center mt-75">Animations</h3>
+<h3 class="text-center mt-75">Cards</h3>
+
+<div class="layout-row justify-content-center my-50">
+    <div class="card w-25 mx-5">
+        <div class="card-text text-center py-50">
+            Default Card
+        </div>
+    </div>
+    <div class="card w-25 flat mx-5">
+        <div class="card-text text-center py-50">
+            Flat Card
+        </div>
+    </div>
+</div>
+
 <div class="layout-row align-items-center justify-content-center">
-    <div class="card w-50 mx-auto slide-up-fade-in">
+    <div class="card w-50 mx-auto">
         <div class="card-text">
             <h4 class="text-capitalize">Your Title</h4>
             <p class="mt-3 mb-4 text-justify">
@@ -71,40 +85,94 @@
     </div>
 </section>
 
-<h3 class="text-center">Input with UL</h3>
-<div class="layout-column justify-content-center align-items-center">
-    <div class="layout-column justify-content-center align-items-center">
+<h3 class="text-center">Inputs with UL</h3>
+<div class="card w-50 mx-auto flat pb-30">
+    <div class="card-text">
+        <h4 class="text-center">Default</h4>
+        <section class="layout-row align-items-center justify-content-center">
+            <input type="text" class="white large" placeholder="Name"/>
+            <button type="submit" class="secondary flat">Add Customer</button>
+        </section>
+        <h4 class="text-center">Outlined</h4>
         <section class="layout-row align-items-center justify-content-center">
             <input type="text" class="white large outlined" placeholder="Name"/>
-            <button type="submit" class="secondary flat" id="submit-button">Add Customer</button>
+            <button type="submit" class="secondary flat">Add Customer</button>
+        </section>
+    </div>
+</div>
+
+<div class="layout-column justify-content-center align-items-center">
+    <div class="layout-column justify-content-center align-items-center">
+
+        <h3 class="text-center mt-40">Lists (Ordered and Unordered)</h3>
+        <section class="layout-row justify-content-center mt-30">
+            <div class="mx-30">
+                <p class="font-weight-bold text-center">Basic List:</p>
+                <ul>
+                    <li>Faster Page Loads</li>
+                    <li>Embedded Styles</li>
+                    <li>Less Bloat</li>
+                    <li>Consistent Interface</li>
+                </ul>
+            </div>
+
+            <div class="mx-30">
+                <p class="font-weight-bold text-center">Unordered Styled List:</p>
+                <ul class="styled">
+                    <li>Faster Page Loads</li>
+                    <li>Embedded Styles</li>
+                    <li>Less Bloat</li>
+                    <li>Consistent Interface</li>
+                </ul>
+            </div>
+
+            <div class="mx-30">
+                <p class="font-weight-bold text-center">Ordered Styled List:</p>
+                <ol class="styled">
+                    <li>Faster Page Loads</li>
+                    <li>Embedded Styles</li>
+                    <li>Less Bloat</li>
+                    <li>Consistent Interface</li>
+                </ol>
+            </div>
         </section>
 
-        <p class="font-weight-bold">Basic List:</p>
-        <ul>
-            <li>Faster Page Loads</li>
-            <li>Embedded Styles</li>
-            <li>Less Bloat</li>
-            <li>Consistent Interface</li>
-        </ul>
-
-        <p class="font-weight-bold mt-40">Unordered Styled List:</p>
-        <ul class="styled">
-            <li>Faster Page Loads</li>
-            <li>Embedded Styles</li>
-            <li>Less Bloat</li>
-            <li>Consistent Interface</li>
-        </ul>
-
-        <p class="font-weight-bold mt-40">Ordered Styled List:</p>
-        <ol class="styled">
-            <li>Faster Page Loads</li>
-            <li>Embedded Styles</li>
-            <li>Less Bloat</li>
-            <li>Consistent Interface</li>
-        </ol>
     </div>
 
 </div>
 
+<h3 class="text-center mt-50">Table</h3>
+<div class="card w-50 mx-auto pb-30">
+    <table>
+        <thead>
+        <tr>
+            <th class="sortable">Material</th>
+            <th class="numeric">Quantity</th>
+            <th class="numeric">Cost price</th>
+            <th class="numeric">Selling price</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Acrylic (Transparent)</td>
+            <td class="numeric">25</td>
+            <td class="numeric">$2.90</td>
+            <td class="numeric">$5.90</td>
+        </tr>
+        <tr>
+            <td>Plywood (Birch)</td>
+            <td class="numeric">50</td>
+            <td class="numeric">$1.25</td>
+            <td class="numeric">$2.25</td>
+        </tr>
+        <tr>
+            <td>Laminate (Gold on Blue)</td>
+            <td class="numeric">10</td>
+            <td class="numeric">$2.35</td>
+            <td class="numeric">$3.05</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
 </body>
 </html>

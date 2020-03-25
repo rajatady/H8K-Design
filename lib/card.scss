@@ -19,6 +19,9 @@
   &.hoverable {
     box-shadow: 0 16px 32px rgba(99, 118, 129, 0.5);
   }
+  &.flat {
+    box-shadow: none;
+  }
 
   .card-text {
     padding: 1em;

@@ -9,3 +9,9 @@
   background: -moz-linear-gradient(top, $from, $to);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#{$from}', endColorstr='#{$to}');
 }
+
+@mixin transition($property, $duration, $timing_function, $delay:null) {
+  webkit-transition: $property $duration $timing_function $delay;
+  -o-transition: $property $duration $timing_function $delay;
+  transition: $property $duration $timing_function $delay;
+}
