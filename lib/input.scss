@@ -31,3 +31,13 @@ input {
   }
 
 }
+
+select {
+  height: 32px;
+  min-width: 112px;
+
+  &:focus {
+    outline: var(--primary-color);
+    border-color: var(--primary-color);
+  }
+}

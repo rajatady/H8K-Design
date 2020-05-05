@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>H8K Demo</title>
     <link rel="stylesheet" type="text/css" href="../dist/index.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 <body class="pb-75">
 <nav class="app-header fixed">
@@ -22,6 +23,13 @@
             Default Card
         </div>
     </div>
+
+    <div class="card w-25 outlined mx-5">
+        <div class="card-text text-center py-50">
+            Outlined Card
+        </div>
+    </div>
+
     <div class="card w-25 flat mx-5">
         <div class="card-text text-center py-50">
             Flat Card
@@ -60,7 +68,7 @@
         <button class="text">Button</button>
         <button class="disabled">Button</button>
         <button class="large">Button</button>
-        <button class="outline small">Button</button>
+        <button class="outlined small">Button</button>
         <button class="x-small disabled">Button</button>
     </div>
 
@@ -70,7 +78,7 @@
         <button class="secondary text">Button</button>
         <button class="secondary disabled">Button</button>
         <button class="secondary large">Button</button>
-        <button class="secondary outline small">Button</button>
+        <button class="secondary outlined small">Button</button>
         <button class="secondary x-small disabled">Button</button>
     </div>
 
@@ -80,12 +88,87 @@
         <button class="danger text">Button</button>
         <button class="danger disabled">Button</button>
         <button class="danger large">Button</button>
-        <button class="danger outline small">Button</button>
+        <button class="danger outlined small">Button</button>
         <button class="danger x-small disabled">Button</button>
     </div>
 </section>
 
-<h3 class="text-center">Inputs with UL</h3>
+<h3 class="text-center">Icon Button with <a href="https://material.io/resources/icons/?style=baseline" target="_blank">Materials Icons</a></h3>
+<section class="layout-row justify-content-center">
+    <div class="layout-column justify-content-center align-items-center mx-20">
+        <button class="icon-only">
+            <i class="material-icons">favorite</i>
+        </button>
+        <button class="icon-only outlined">
+            <i class="material-icons">shop</i>
+        </button>
+        <button class="icon-only" disabled>
+            <i class="material-icons">location_off</i>
+        </button>
+        <button class="icon-only large">
+            <i class="material-icons">explore</i>
+        </button>
+        <button class="icon-only small outlined">
+            <i class="material-icons">add_to_queue</i>
+        </button>
+        <button class="icon-only x-small outlined tile">
+            <i class="material-icons">add</i>
+        </button>
+        <button class="icon-only x-small" disabled>
+            <i class="material-icons">phone_disabled</i>
+        </button>
+    </div>
+
+    <div class="layout-column justify-content-center align-items-center mx-20">
+        <button class="secondary icon-only ">
+            <i class="material-icons">favorite</i>
+        </button>
+        <button class="secondary icon-only outlined">
+            <i class="material-icons">shop</i>
+        </button>
+        <button class="icon-only secondary" disabled>
+            <i class="material-icons">location_off</i>
+        </button>
+        <button class="icon-only large secondary">
+            <i class="material-icons">explore</i>
+        </button>
+        <button class="icon-only small outlined secondary">
+            <i class="material-icons">add_to_queue</i>
+        </button>
+        <button class="icon-only x-small outlined tile secondary">
+            <i class="material-icons">add</i>
+        </button>
+        <button class="icon-only x-small secondary" disabled>
+            <i class="material-icons">phone_disabled</i>
+        </button>
+    </div>
+
+    <div class="layout-column justify-content-center align-items-center mx-20">
+        <button class="danger icon-only ">
+            <i class="material-icons">favorite</i>
+        </button>
+        <button class="danger icon-only outlined">
+            <i class="material-icons">shop</i>
+        </button>
+        <button class="icon-only danger" disabled>
+            <i class="material-icons">location_off</i>
+        </button>
+        <button class="icon-only large danger">
+            <i class="material-icons">explore</i>
+        </button>
+        <button class="icon-only small outlined danger">
+            <i class="material-icons">add_to_queue</i>
+        </button>
+        <button class="icon-only x-small outlined tile danger">
+            <i class="material-icons">add</i>
+        </button>
+        <button class="icon-only x-small danger" disabled>
+            <i class="material-icons">phone_disabled</i>
+        </button>
+    </div>
+</section>
+
+<h3 class="text-center">Inputs</h3>
 <div class="card w-50 mx-auto flat pb-30">
     <div class="card-text">
         <h4 class="text-center">Default</h4>
@@ -105,7 +188,7 @@
     <div class="layout-column justify-content-center align-items-center">
 
         <h3 class="text-center mt-40">Lists (Ordered and Unordered)</h3>
-        <section class="layout-row justify-content-center mt-30">
+        <section class="layout-row layout-xs-column justify-content-center mt-30">
             <div class="mx-30">
                 <p class="font-weight-bold text-center">Basic List:</p>
                 <ul>

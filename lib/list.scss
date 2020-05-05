@@ -18,6 +18,23 @@ ul, ol {
       box-shadow: 0 4px 12px #eaeaea;
     }
   }
+
+  &.bordered {
+    li {
+      border-bottom: 1px solid #eeeeee;
+
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+  }
+
+  &.inset {
+    li {
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+  }
 }
 
 ul {
