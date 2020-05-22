@@ -1,5 +1,5 @@
 body {
-  background: linear-gradient(to bottom, #f9f9f9 0%, #f3f7f7 100%);
+  background: var(--app-background);
   min-height: calc(100vh);
 }
 
