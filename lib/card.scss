@@ -22,6 +22,13 @@
   }
   &.flat {
     box-shadow: none;
+    background: white;
+  }
+
+  &.outlined {
+    background: white;
+    border: thin solid rgba(var(--primary-rgb), 0.1);
+    box-shadow: none;
   }
 
   .card-text {
