@@ -24,7 +24,7 @@
   "devDependencies": {
     "kss": "^3.0.0",
     "michelangelo": "^0.8.0",
-    "node-sass": "^4.13.1",
+    "node-sass": "^7.0.0",
     "vuepress": "^1.4.0"
   }
 }
